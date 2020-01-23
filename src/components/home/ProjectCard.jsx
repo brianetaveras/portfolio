@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 
 export default function ProjectCard({ image }) {
-  console.log(image);
   const ProjectPreview = styled.div`
         background-image: url('${image}');
         background-size: 150%;
