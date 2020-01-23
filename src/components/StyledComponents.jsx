@@ -18,6 +18,7 @@ export const SkillContainer = styled.div`
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   transition: background 0.5s;
+  background: white;
 
   &:hover {
     background: #f1f1f1;
