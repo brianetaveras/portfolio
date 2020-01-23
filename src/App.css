@@ -19,9 +19,25 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+@media (max-width: 800px){
+  .navigation .content .links{
+    display: none;
+  }
+}
+
+.navigation .content nav{
+  width: 150px;
+  
+}
 .navigation .content nav a i {
   font-size: 32px;
-  color: black;
+  color: #f1f1f186;
+  transition: 1s;
+  
+}
+.navigation .content nav a i:hover {
+  color: #ffffff;
   
 }
 
@@ -96,4 +112,11 @@
 .footer{
   height: 80px;
   text-align: center;
+  background: black;
+  color: white;
+  padding: 50px 0;
+}
+
+.footer a{
+  color: white;
 }

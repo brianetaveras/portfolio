@@ -4,6 +4,7 @@ import {Navbar, Container} from '../StyledComponents';
 
 
 export default function Navigation(){
+    console.log(window)
     return (
         <div className="navigation">
             <Navbar>

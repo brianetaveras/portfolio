@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Navbar = styled.div`
-  height: 100%;
   width: 100%;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+  background: black;
+  color: white;
 `;
 export const Container = styled.div`
   max-width: 1200px;
@@ -19,6 +20,7 @@ export const SkillContainer = styled.div`
   border-radius: 10px;
   transition: background 0.5s;
   background: white;
+  cursor: pointer;
 
   &:hover {
     background: #f1f1f1;
