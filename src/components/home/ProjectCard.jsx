@@ -1,10 +1,9 @@
 import React from "react";
-
 import styled from "styled-components";
 
-export default function ProjectCard({ data }) {
+export default function ProjectCard(props) {
   const ProjectPreview = styled.div`
-        background-image: url('https://api.briantastic.com/${data.image.path}');
+        background-image: url('https://api.briantastic.com/${props.data.image.path}');
         background-size: 150%;
         background-position: center;
         height: 200px;
@@ -23,5 +22,8 @@ export default function ProjectCard({ data }) {
 
    
 
-  return <ProjectPreview />;
+  return <ProjectPreview onClick={()=>{
+    console.log(props)
+    props.history.push(`/project/${props.data._id}`)
+  }}/>;
 }

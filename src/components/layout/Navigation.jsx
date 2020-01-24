@@ -1,5 +1,6 @@
 import React from 'react';
 import {Navbar, Container} from '../StyledComponents';
+import {Link} from 'react-router-dom';
 
 
 
@@ -9,7 +10,7 @@ export default function Navigation(){
             <Navbar>
                 <Container>
                     <div className="content">
-                        <div className="logo">BRIAN TAVERAS</div>
+                        <div className="logo"><Link to="/">BRIAN TAVERAS</Link></div>
                         <nav className="links">
                             <a title="Github link" href="https://github.com/brianetaveras/"><i className="fa fa-github-square"></i></a>
                             <a title="Linked link" href="https://www.linkedin.com/in/brianetaveras/"><i className="fa fa-linkedin-square"></i></a>

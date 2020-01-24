@@ -2,7 +2,6 @@ import React from 'react';
 import SkillBlock from "./SkillBlock";
 
 export default function Skills(props){
-    console.log(props)
     return (
         <div className="skills-list">
             <h1>Skills</h1>

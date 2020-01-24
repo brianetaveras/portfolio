@@ -26,9 +26,7 @@ export default function Loader(){
 
     return(
 
-        <LoaderBox>
             <LoaderCircle/>
-        </LoaderBox>
         
     )
 }

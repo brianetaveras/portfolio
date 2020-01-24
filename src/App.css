@@ -32,7 +32,7 @@
 }
 .navigation .content nav a i {
   font-size: 32px;
-  color: #f1f1f186;
+  color: #00A295;
   transition: 1s;
   
 }
@@ -41,9 +41,11 @@
   
 }
 
-.navigation .content .logo{
+.navigation .content .logo a{
   font-weight: bold;
   font-size: 24px;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 .skills{
@@ -126,4 +128,14 @@
 @keyframes loader{
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+.project-page{
+  max-width: 80%;
+  margin: 0 auto;
+}
+.project-page img{
+  max-width: 100%;
+  object-fit: scale-down;
+  height: 100%;
 }

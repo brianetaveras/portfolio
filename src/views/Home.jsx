@@ -8,7 +8,7 @@ import getData from '../utils/getData';
 
 
 
-export default function Home() {
+export default function Home(props) {
   const [skills, setSkills] = useState();
   const [projects, setProjects] = useState();
 
@@ -21,6 +21,9 @@ export default function Home() {
     });
   }, []);
 
+
+
+
   return (
     <div className="home-page">
       {skills && projects ? 
@@ -30,7 +33,7 @@ export default function Home() {
           <Skills skills={skills} />
         </div>
         <div className="right">
-          <Projects projects={projects} />
+          <Projects {...props} projects={projects}  />
         </div>
       </Container>
       : <Loader/>

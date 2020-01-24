@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
-export const Navbar = styled.div`
+export const Navbar = styled.nav`
   width: 100%;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
-  background: #00A295;
-  color: white;
+  background: white;
+  color: #00A295;
 `;
 export const Container = styled.div`
   max-width: 1200px;
