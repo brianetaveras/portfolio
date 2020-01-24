@@ -23,12 +23,11 @@ export const SkillContainer = styled.div`
     background: white;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   }
-
+  
   @media(max-width: 800px){
-    &:hover{
-      box-shadow: none;
-
-    }
+    background: white;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+    
   }
 `;
 
