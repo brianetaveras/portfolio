@@ -23,6 +23,13 @@ export const SkillContainer = styled.div`
     background: white;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   }
+
+  @media(max-width: 800px){
+    &:hover{
+      box-shadow: none;
+
+    }
+  }
 `;
 
 export const SkillImage = styled.div`
@@ -61,9 +68,6 @@ export const SkillBubble = styled.div`
   transition: 1s;
   z-index: 9999;
   
-  // ${SkillContainer}:hover & {
-  //     display: block;
-  //     visibility: visible;
-  // }
+ 
 `;
 
