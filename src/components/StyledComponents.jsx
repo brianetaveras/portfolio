@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Navbar = styled.div`
   width: 100%;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
-  background: black;
+  background: #00A295;
   color: white;
 `;
 export const Container = styled.div`
@@ -16,17 +16,12 @@ export const SkillContainer = styled.div`
   position: relative;
   width: 120px;
   height: 120px;
-  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  transition: background 0.5s;
-  background: white;
-  cursor: pointer;
+  transition: 0.5s;
 
   &:hover {
-    background: #f1f1f1;
-   
-
-
+    background: #fffff;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   }
 `;
 
@@ -66,10 +61,9 @@ export const SkillBubble = styled.div`
   transition: 1s;
   z-index: 9999;
   
-  ${SkillContainer}:hover & {
-      display: block;
-      visibility: visible;
-  }
+  // ${SkillContainer}:hover & {
+  //     display: block;
+  //     visibility: visible;
+  // }
 `;
-
 

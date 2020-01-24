@@ -1,13 +1,14 @@
 import React from 'react';
 import SkillBlock from "./SkillBlock";
 
-export default function Skills({skills}){
+export default function Skills(props){
+    console.log(props)
     return (
         <div className="skills-list">
             <h1>Skills</h1>
             <div className="skills">
 
-            {skills.map(skill=>{
+            {props.skills.map(skill=>{
                 return <SkillBlock skill={skill} key={skill._id}/>
 
             })}

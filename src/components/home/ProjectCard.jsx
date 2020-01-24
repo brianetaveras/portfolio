@@ -2,9 +2,9 @@ import React from "react";
 
 import styled from "styled-components";
 
-export default function ProjectCard({ image }) {
+export default function ProjectCard({ data }) {
   const ProjectPreview = styled.div`
-        background-image: url('${image}');
+        background-image: url('https://api.briantastic.com/${data.image.path}');
         background-size: 150%;
         background-position: center;
         height: 200px;

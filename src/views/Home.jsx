@@ -3,32 +3,39 @@ import { Container } from "../components/StyledComponents";
 import Overview from "../components/home/Overview";
 import Skills from "../components/home/Skills";
 import Projects from "../components/home/Projects";
-import axios from "axios";
+import Loader from '../components/Loader';
+import getData from '../utils/getData';
+
+
 
 export default function Home() {
-  const [skills, setSkills] = useState([]);
+  const [skills, setSkills] = useState();
+  const [projects, setProjects] = useState();
 
   useEffect(() => {
-    axios
-      .get(
-        "https://api.briantastic.com/api/collections/get/skills?token=45c1a26189ae5d54ae4b6c64bcbc3c"
-      )
-      .then(res => {
-        setSkills(res.data.entries);
-      });
+    getData('skills').then(res=>{
+      setSkills(res.data.entries)
+    });
+    getData('projects').then(res=>{
+      setProjects(res.data.entries)
+    });
   }, []);
 
   return (
     <div className="home-page">
+      {skills && projects ? 
       <Container className="home-content">
         <div className="left">
           <Overview />
           <Skills skills={skills} />
         </div>
         <div className="right">
-          <Projects />
+          <Projects projects={projects} />
         </div>
       </Container>
+      : <Loader/>
+    }
     </div>
+
   );
 }
