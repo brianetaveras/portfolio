@@ -26,7 +26,7 @@ export default function Home(props) {
 
   return (
     <div className="home-page">
-      {skills && projects ? 
+    {skills && projects ? 
       <Container className="home-content">
         <div className="left">
           <Overview />

@@ -4,7 +4,7 @@ export const Navbar = styled.nav`
   width: 100%;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
   background: white;
-  color: #00A295;
+  color: #000;
 `;
 export const Container = styled.div`
   max-width: 1200px;
@@ -20,7 +20,7 @@ export const SkillContainer = styled.div`
   transition: 0.5s;
 
   &:hover {
-    background: #fffff;
+    background: white;
     box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
   }
 `;
