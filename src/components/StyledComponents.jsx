@@ -18,6 +18,7 @@ export const SkillContainer = styled.div`
   height: 120px;
   border-radius: 10px;
   transition: 1s;
+  line-height: 16px;
 
   &:hover {
     background: white;
@@ -33,7 +34,7 @@ export const SkillContainer = styled.div`
 
 export const SkillImage = styled.div`
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 50px;
