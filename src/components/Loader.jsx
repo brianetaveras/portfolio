@@ -3,24 +3,32 @@ import styled from 'styled-components'
 
 
 const LoaderCircle = styled.div`
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-70%, -50%)!important;
+margin: 20% auto;
 border: 16px solid #cdcdcd;
 border-top: 16px solid #00A295;
 border-radius: 50%;
 width: 50px;
 height: 50px;
 animation: loader 1.5s linear infinite;
+transition: 1s;
 
+`
+
+const LoaderOverlay = styled.div`
+position: fixed;
+height: 100vh;
+width: 100%;
+background: #01B7A8;
+transition: 1s;
 `
 
 export default function Loader(){
 
     return(
+            <LoaderOverlay>
+                <LoaderCircle/>
 
-            <LoaderCircle/>
+            </LoaderOverlay>
         
     )
 }

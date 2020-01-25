@@ -30,11 +30,15 @@ class Project extends Component {
     render(){
       
         return (
-            <div className="project-page">
-                {this.state.project.content.length ? <Container>
+
+            <div>
+                {this.state.project.content.length ?  <div className="project-page">
+                 <Container>
                 <div dangerouslySetInnerHTML={this.createMarkup()}/>
-                </Container> : <Loader />}
+                </Container> 
+            </div> : <Loader/>}
             </div>
+           
         )
     }
 
