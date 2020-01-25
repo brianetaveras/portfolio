@@ -17,7 +17,7 @@ export const SkillContainer = styled.div`
   width: 120px;
   height: 120px;
   border-radius: 10px;
-  transition: 0.5s;
+  transition: 1s;
 
   &:hover {
     background: white;
