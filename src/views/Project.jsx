@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import getData from '../utils/getData';
-import {Container} from '../components/StyledComponents';
 import Loader from '../components/Loader';
+import Media from '../components/project/Media';
 
 class Project extends Component {
     constructor(props){
@@ -9,13 +9,14 @@ class Project extends Component {
 
         this.state = {
             project: {
-                content: []
+                content: [],
             }
         }
     }
 
-    componentWillMount(){
+    UNSAFE_componentWillMount(){
         getData('projects', this.props.match.params.id).then(res=>{
+            console.log(res.data.entries[0])
             this.setState({
                 project: res.data.entries[0]
             })
@@ -32,11 +33,14 @@ class Project extends Component {
         return (
 
             <div>
-                {this.state.project.content.length ?  <div className="project-page">
-                 <Container>
-                <div dangerouslySetInnerHTML={this.createMarkup()}/>
-                </Container> 
-            </div> : <Loader/>}
+                {this.state.project.content.length ?  (
+                <div className="project-page">
+                <div className="project-content" dangerouslySetInnerHTML={this.createMarkup()}/>
+                <Media photos={this.state.project.gallery} />
+                </div>)
+                
+                
+                : <Loader/>}
             </div>
            
         )
