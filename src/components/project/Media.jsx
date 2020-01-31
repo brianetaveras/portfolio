@@ -6,7 +6,6 @@ export default function Media(props){
     console.log(props);
     return(
         <div className="project-gallery">
-            <h1>Product Image</h1>
             <Gallery  images={props.photos.map(photo=>{
                 return {
                     src: `https://api.briantastic.com/${photo.path}`,
