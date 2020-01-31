@@ -125,14 +125,20 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  max-width: 70%;
-  margin: 0 auto;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
 }
 
 .project-page .project-content {
   max-width: 100%;
   width: 47%;
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: -5px 5px 10px 1px rgba(0,0,0,0.1);
   object-fit: scale-down;
+  box-sizing: border-box;
   /* height: 100%; */
 }
 .project-page .project-content img {
@@ -143,6 +149,8 @@
 
 .project-gallery {
   width: 47%;
+  
+
 }
 @media (max-width: 800px) {
   .project-page {
