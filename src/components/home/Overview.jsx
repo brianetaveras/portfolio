@@ -5,12 +5,8 @@ export default function Overview(){
         <div className="overview">
             <h1>Overview</h1>
             <div className="text">
-
-            I'm a Front-end Web Developer with a Trust & Safety and Design background. 
-<br/>
-<br/>
-My skill repository includes modern Javascript frameworks such as VueJS and ReactJS. I'm also fluent in modern CSS, CSS Animations, and pre-processors like Less and Sass.
-            </div>
+            Front-end Web Developer with a passion for learning and Community-based projects. Prior experience as a Designer and policy writer working along with cross-functional teams.
+             </div>
         </div>
     )
 }
