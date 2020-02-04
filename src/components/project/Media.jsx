@@ -3,7 +3,6 @@ import Gallery from 'react-grid-gallery';
 
 
 export default function Media(props){
-    console.log(props);
     return(
         <div className="project-gallery">
             <Gallery  images={props.photos.map(photo=>{

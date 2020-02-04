@@ -23,7 +23,6 @@ export default function ProjectCard(props) {
    
 
   return <ProjectPreview onClick={()=>{
-    console.log(props)
     props.history.push(`/project/${props.data._id}`)
   }}/>;
 }
