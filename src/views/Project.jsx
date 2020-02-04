@@ -16,7 +16,6 @@ class Project extends Component {
 
     UNSAFE_componentWillMount(){
         getData('projects', this.props.match.params.id).then(res=>{
-            console.log(res.data.entries[0])
             this.setState({
                 project: res.data.entries[0]
             })
@@ -32,7 +31,7 @@ class Project extends Component {
       
         return (
 
-            <div>
+            <div className="project-page-wrapper">
                 {this.state.project.content.length ?  (
                 <div className="project-page">
                 <div className="project-content" dangerouslySetInnerHTML={this.createMarkup()}/>

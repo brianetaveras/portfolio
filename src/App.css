@@ -68,6 +68,10 @@
   font-size: 14px;
 }
 
+.home-page{
+  min-height: 100vh;
+}
+
 .home-page .home-content {
   display: flex;
   justify-content: space-between;
@@ -122,6 +126,10 @@
   100% {
     transform: rotate(360deg);
   }
+}
+
+.project-page-wrapper{
+  min-height: 100vh;
 }
 
 .project-page {

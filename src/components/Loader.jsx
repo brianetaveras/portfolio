@@ -15,7 +15,7 @@ transition: 1s;
 `
 
 const LoaderOverlay = styled.div`
-position: fixed;
+position: absolute;
 height: 100vh;
 width: 100%;
 background: #01B7A8;
