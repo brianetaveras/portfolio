@@ -16,7 +16,7 @@
 .navigation .content nav {
   width: 100px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 @media (max-width: 800px) {
