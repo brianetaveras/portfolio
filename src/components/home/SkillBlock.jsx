@@ -11,7 +11,7 @@ export default function SkillBlock({ skill }) {
         </SkillBubble>
 
         <SkillImage>
-          <img src={`https://api.briantastic.com/${skill.Icon.path}`} alt="" />
+          <img width="100%;"src={`https://api.briantastic.com/${skill.Icon.path}`} alt="" />
         </SkillImage>
           <div className="title">{skill.Title}</div>
       </SkillContainer>

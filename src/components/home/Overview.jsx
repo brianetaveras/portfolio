@@ -5,7 +5,13 @@ export default function Overview(){
         <div className="overview">
             <h1>Overview</h1>
             <div className="text">
-            Front-end Web Developer with a passion for learning and Community-based projects. Prior experience as a Designer and policy writer working along with cross-functional teams.
+                <p>
+                    Software Developer with experience building full-stack web applications. Prior experience as a designer and policy writer working with cross-functional teams to solve complex problems.
+                </p>
+                <p>
+                    I enjoy reading about technology and collaborating with developers around the world.
+                </p>
+
              </div>
         </div>
     )
